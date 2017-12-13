@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : clocks
+Design : IPF
+Version: K-2015.06-SP1
+Date   : Fri Jun  2 10:10:12 2017
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            30.000   {0 15}                        {clk}
+--------------------------------------------------------------------------------

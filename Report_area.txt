@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : IPF
+Version: K-2015.06-SP1
+Date   : Fri Jun  2 10:10:01 2017
+****************************************
+
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/cur/SynopsysDC/db/slow.db)
+
+Number of ports:                          212
+Number of nets:                          1059
+Number of cells:                          758
+Number of combinational cells:            637
+Number of sequential cells:               115
+Number of macros/black boxes:               0
+Number of buf/inv:                         65
+Number of references:                      48
+
+Combinational area:               6774.323425
+Buf/Inv area:                      271.583996
+Noncombinational area:            3415.168686
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 10189.492111
+Total area:                 undefined
