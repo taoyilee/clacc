@@ -1,4 +1,5 @@
 *.fsdb
+.nfs*
 *.log
 INCA_libs/
 *.pvl
