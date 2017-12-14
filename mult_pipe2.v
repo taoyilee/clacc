@@ -13,7 +13,7 @@ module mult_pipe2 #(
 	input [SIZE-1 : 0] a;
 	input [SIZE-1 : 0] b;
 	input clk;
-	output [2*SIZE-1 : 0] pdt;
+	output wire [2*SIZE-1 : 0] pdt;
 	reg [SIZE-1 : 0] a_int, b_int;
 	reg [2*SIZE-1 : 0] pdt_int [LVL-1 : 0];
 	integer i;
@@ -25,10 +25,8 @@ module mult_pipe2 #(
 	// registering input of the multiplier
 		a_int <= a;
 		b_int <= b;
-	// '' levels of registers to be inferred at the output
-	// of the multiplier
+		for(i=1; i <LVL ; i = i + 1)
+			pdt_int[i] <= pdt_int [i-1];
 		pdt_int[0] <= a_int * b_int;
-		for(i =1;i < LVL ;i =i +1)
-			pdt_int [i] <= pdt_int [i-1];
 	end // always @ (posedge clk)
 endmodule // pipelined_multiplier

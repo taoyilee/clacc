@@ -18,7 +18,7 @@
 module mult_pipe2_tb
   #(parameter SIZE  = 16);
 
-	parameter CYCLES = 50;
+	parameter CYCLES = 15;
 	integer index = 0;
 	initial begin
 		$fsdbDumpfile("mult_pipe2");
@@ -39,7 +39,7 @@ module mult_pipe2_tb
    initial begin
 	 	while (index < CYCLES) 
 		begin
-			@(posedge clk);
+			@(negedge clk);
 			begin
 				a <= $random();
 				b <= $random();
