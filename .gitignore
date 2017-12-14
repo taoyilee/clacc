@@ -1,3 +1,7 @@
 *.fsdb
 *.log
 INCA_libs/
+*.pvl
+*.syn
+*.svf
+*.mr

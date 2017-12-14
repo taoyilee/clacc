@@ -1,5 +1,5 @@
 `define CYCLE      30
-`define SDFFILE    "./IPF.sdf"	  
+`define SDFFILE    "./CLA.sdf"	  
 `define End_CYCLE  10000000
 
 `define PAT        "./pattern.dat"    
@@ -10,7 +10,7 @@
 `define EXP2        "./golden2.dat"
 
 
-module IPF_tb;
+module CLA_tb;
 
 	parameter N_EXP   = 16384;
 	parameter N_PAT   = N_EXP;
@@ -36,7 +36,7 @@ module IPF_tb;
 	reg gray_ready = 0;
 	integer i;
 
-   IPF IPF( .clk(clk),
+   CLA CLA( .clk(clk),
    			.reset(reset), 
    			.mode(mode), 
             .gray_addr(gray_addr), 
@@ -76,10 +76,10 @@ module IPF_tb;
 	initial begin
 
 		`ifdef SDF
-			$sdf_annotate(`SDFFILE, IPF);
-			$fsdbDumpfile("IPF_syn.fsdb");
+			$sdf_annotate(`SDFFILE, CLA);
+			$fsdbDumpfile("CLA_syn.fsdb");
 		`else
-			$fsdbDumpfile("IPF.fsdb");
+			$fsdbDumpfile("CLA.fsdb");
 		`endif
 		$fsdbDumpvars;
 
