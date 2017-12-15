@@ -2,6 +2,7 @@
 Deep Learning Accelerator (Convolution Neural Networks)
 
 This is an implementation of MIT Eyeriss-like deep learning accelerator in Verilog
+Note: clacc stands for *convolutional layer accelerator*
 
 ## License
 
