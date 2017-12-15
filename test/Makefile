@@ -7,7 +7,7 @@ SRC_PE			= dual_clock_fifo_tb.v ../dual_clock_fifo.v fifo_tester.v fifo_writer.v
 SRC_MULT			= ../header.v mult_pipe2_tb.v ../mult_pipe2.v
 SRC_IFMAP_SPAD			= ../header.v ifmap_spad_tb.v ../ifmap_spad.v
 SRC_BS_ADD		= ../header.v bs_adder_tb.v ../bs_adder.v ../fa.v ../ha.v
-SRC_BS_MUL		= ../header.v bs_adder_tb.v ../bs_mult.v ../bs_mult_slice.v ../counter_5to3.v
+SRC_BS_MUL		= ../header.v bs_mult_tb.v ../bs_mult.v ../bs_mult_slice.v ../counter_5to3.v
 
 VLOGARG		=+access+r
 

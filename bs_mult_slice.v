@@ -26,16 +26,19 @@ module bs_mult_slice(clk, xy, pin, cin, rin, x, y, pout, cout, rout, lastbit);
 			cout <= 1'b0;
 			rout <= 1'b0;
 		end
-
-		if(rin)
+		else
 		begin
-			x_delay <= x;
-			y_delay <= y;
+			if(rin)
+			begin
+				x_delay <= x;
+				y_delay <= y;
+			end
+			pin_delay <= pin;
+			cout1_delay <= cout_int[1];
+			cout <= cout_int[2];
+			rout <= rin;
 		end
 
-		pin_delay <= pin;
-		cout1_delay <= cout_int[1];
-		cout <= cout_int[2];
-		rout <= rin;
+
 	end
 endmodule
