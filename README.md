@@ -5,6 +5,10 @@ This is an implementation of MIT Eyeriss-like deep learning accelerator in Veril
 
 Note: clacc stands for **convolutional layer accelerator**
 
+## Background
+
+This is originally a course project of Deep Learning Hardware Accelerator Design at National Tsing Hua University, lectured by Prof. [Youn-Long Lin](http://www.cs.nthu.edu.tw/~ylin/). The course is an equivalent of [CS231n](cs231n.stanford.edu) from stanford.
+
 ## Architecture Overview
 
 
